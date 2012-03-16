@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace icevalencerinaBONUS
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int a, b, c, d, f, g ,h, i, j;
+            a = int.Parse(textBox1.Text);
+            b = int.Parse(textBox2.Text);
+            c = int.Parse(textBox3.Text);
+            d = int.Parse(textBox4.Text);
+            f = int.Parse(textBox5.Text);
+            g = int.Parse(textBox6.Text);
+            h = int.Parse(textBox7.Text);
+            i = int.Parse(textBox8.Text);
+            j = int.Parse(textBox9.Text);
+
+            if (b == d && c == h && i == g)
+            {
+                MessageBox.Show("Symmetric!");
+            }
+            else
+            {
+                MessageBox.Show("Not Symmetric!");
+            }
+        
+        }
+    }
+}
